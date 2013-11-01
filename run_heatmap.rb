@@ -1,11 +1,9 @@
 #!/usr/bin/env ruby
 
-require 'rubygems'
-require 'xmlsimple' 
+require 'rubygems' 
 require 'logger'
 
 #This script downloads the latest sequenceL installer and runs a heatmap
-#Do not forget to add the path to sequenceL to $PATH
 
 #returns the last build : ctk query "SELECT MAX(Build) FROM tasks;"
 def get_latest_build()
