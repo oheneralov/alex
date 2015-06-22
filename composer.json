@@ -1,0 +1,25 @@
+{
+    "name":"alanablett/api-extensions",
+    "type":"magento-module",
+    "require":{
+        "magento-hackathon/magento-composer-installer":"*",
+        "alanablett/api-extensions":"dev-master"
+    },
+	"repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/magento-hackathon/magento-composer-installer"
+        },
+        {
+            "type": "vcs",
+            "url": "D:/alex/wamp/www/ssomodule"
+        }
+    ],
+    "extra":{
+        "map":[
+            ["app/etc/modules/Alanablett_Apiextensions.xml", "app/etc/modules/Alanablett_Apiextensions.xml"],
+            ["app/code/local/Alanablett/Apiextensions/", "app/code/local/Alanablett/Apiextensions/"]
+        ],
+		"magento-root-dir": "magento/"
+    }
+}
