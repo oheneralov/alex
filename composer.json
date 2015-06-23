@@ -3,7 +3,7 @@
     "type":"magento-module",
     "require":{
         "magento-hackathon/magento-composer-installer":"*",
-        "alanablett/api-extensions":"dev-master"
+        "oheneralov/alex":"*"
     },
 	"repositories": [
         {
@@ -12,7 +12,7 @@
         },
         {
             "type": "vcs",
-            "url": "D:/alex/wamp/www/ssomodule"
+            "url": "https://github.com/oheneralov/alex"
         }
     ],
     "extra":{
@@ -20,6 +20,6 @@
             ["app/etc/modules/Alanablett_Apiextensions.xml", "app/etc/modules/Alanablett_Apiextensions.xml"],
             ["app/code/local/Alanablett/Apiextensions/", "app/code/local/Alanablett/Apiextensions/"]
         ],
-		"magento-root-dir": "magento/"
+		"magento-root-dir": "magentotest/"
     }
 }
