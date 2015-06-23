@@ -1,5 +1,5 @@
 {
-    "name":"alanablett/api-extensions",
+    "name":"oheneralov/alex",
     "type":"magento-module",
     "require":{
         "magento-hackathon/magento-composer-installer":"*",
