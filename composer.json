@@ -42,17 +42,6 @@
         "behat/transliterator": "~1.0",
         "doctrine/common": "~2.4"
     },
-    "require-dev": {
-        "doctrine/mongodb-odm": ">=1.0.0-BETA11",
-        "doctrine/orm": "~2.4",
-        "symfony/yaml": "~2.3",
-        "phpunit/phpunit": "~4.4",
-        "phpunit/phpunit-mock-objects": "~2.3"
-    },
-    "suggest": {
-        "doctrine/mongodb-odm": "to use the extensions with the MongoDB ODM",
-        "doctrine/orm": "to use the extensions with the ORM"
-    },
     "autoload": {
         "psr-0": { "Gedmo\\": "lib/" }
     },
