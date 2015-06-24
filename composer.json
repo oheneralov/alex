@@ -1,25 +1,67 @@
 {
-    "name":"oheneralov/alex",
-    "type":"magento-module",
-    "require":{
-        "magento-hackathon/magento-composer-installer":"*",
-        "oheneralov/alex":"*"
-    },
-	"repositories": [
+    "name": "gedmo/doctrine-extensions",
+    "type": "library",
+    "description": "Doctrine2 behavioral extensions",
+    "keywords": [
+        "behaviors",
+        "doctrine2",
+        "extensions",
+        "gedmo",
+        "sluggable",
+        "loggable",
+        "translatable",
+        "tree",
+        "nestedset",
+        "sortable",
+        "timestampable",
+        "blameable",
+        "uploadable"
+    ],
+    "homepage": "http://gediminasm.org/",
+    "license": "MIT",
+    "authors": [
         {
-            "type": "vcs",
-            "url": "https://github.com/magento-hackathon/magento-composer-installer"
+            "name": "Gediminas Morkevicius",
+            "email": "gediminas.morkevicius@gmail.com"
         },
         {
-            "type": "vcs",
-            "url": "https://github.com/oheneralov/alex"
+            "name": "Gustavo Falco",
+            "email": "comfortablynumb84@gmail.com"
+        },
+        {
+            "name": "David Buchmann",
+            "email": "david@liip.ch"
         }
     ],
-    "extra":{
-        "map":[
-            ["app/etc/modules/Alanablett_Apiextensions.xml", "app/etc/modules/Alanablett_Apiextensions.xml"],
-            ["app/code/local/Alanablett/Apiextensions/", "app/code/local/Alanablett/Apiextensions/"]
-        ],
-		"magento-root-dir": "magentotest/"
+    "support": {
+        "email": "gediminas.morkevicius@gmail.com",
+        "wiki": "https://github.com/Atlantic18/DoctrineExtensions/tree/master/doc"
+    },
+    "require": {
+        "php": ">=5.3.2",
+        "behat/transliterator": "~1.0",
+        "doctrine/common": "~2.4"
+    },
+    "require-dev": {
+        "doctrine/mongodb-odm": ">=1.0.0-BETA11",
+        "doctrine/orm": "~2.4",
+        "symfony/yaml": "~2.3",
+        "phpunit/phpunit": "~4.4",
+        "phpunit/phpunit-mock-objects": "~2.3"
+    },
+    "suggest": {
+        "doctrine/mongodb-odm": "to use the extensions with the MongoDB ODM",
+        "doctrine/orm": "to use the extensions with the ORM"
+    },
+    "autoload": {
+        "psr-0": { "Gedmo\\": "lib/" }
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.3.x-dev"
+        }
     }
 }
